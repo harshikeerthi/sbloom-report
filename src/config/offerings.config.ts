@@ -1,0 +1,125 @@
+import type { DocumentData } from '../types/document';
+
+export const DEFAULT_DOCUMENT_DATA: DocumentData = {
+  id: 'doc-sbloom-v2-001',
+  title: 'sBLOOM MASTER SERVICES AGREEMENT',
+  subtitle: 'Digital Presence, Marketing, Website & Growth Services',
+  version: 'V2.0 – Updated template',
+  status: 'draft',
+  createdAt: '2026-10-14',
+  updatedAt: '2026-10-14',
+  clientInfo: {
+    customerName: 'Kavety Multispeciality Hospital',
+    legalEntityName: 'Kavety Multispeciality Hospital Pvt. Ltd.',
+    customerCinGstin: 'U85110AP2021PTC098765 / 37AABCK1234M1Z2',
+    customerRegisteredAddress: 'Plot No. 42, Health City, Chinna Gadhili, Arilova, Visakhapatnam, Andhra Pradesh - 530040',
+    representativeName: 'Dr. Hanumanth Reddy',
+    representativeTitle: 'Owner / Managing Director',
+    address: 'Near Rama Talkies Junction, Asilmetta, Visakhapatnam, Andhra Pradesh - 530003',
+    phone: '+91 98765 43210',
+    email: 'contact@kavetyhospital.com',
+    noticeEmailCustomer: 'director@kavetyhospital.com',
+    effectiveDate: '15th Day of August 2026',
+    jurisdiction: 'Visakhapatnam, Andhra Pradesh, India',
+    governingLaw: 'Laws of Andhra Pradesh State, India',
+    serviceProviderName: 'OTTOBON PROFESSIONAL SERVICES PRIVATE LIMITED, operating under the sBLOOM brand',
+    serviceProviderBrand: 'sBLOOM',
+    providerCinGstin: 'U74999AP2024PTC123456 / 37AAFCO1234F1Z5',
+    providerRegisteredAddress: 'D.No. 10-50-14/1, Siripuram, Visakhapatnam, Andhra Pradesh - 530003',
+    noticeEmailProvider: 'notices@ottobon.com | legal@sbloom.in',
+    serviceProviderRep: 'Bhanu Prasad Bonu',
+    serviceProviderTitle: 'Director'
+  },
+  selectedOfferings: {
+    socialMedia: true,
+    gbp: true,
+    paidAds: false,
+    website: false,
+    seo: false,
+    onboardingChecklist: true // Annexure G
+  },
+  socialMedia: {
+    serviceBrand: 'sBLOOM by OTTOBON',
+    videoSupplier: 'agency_shoots',
+    monthlyFee: 8000,
+    trialPeriod: 'First 1 month complimentary introductory period',
+    platforms: 'Instagram / Facebook / [OTHER IF AGREED]',
+    reelsCount: '8 / month (approx. 10-30 sec, scripting, filming/editing)',
+    reelsNotes: 'Scripting, filming/editing and caption support within approved content plan.',
+    staticPostsCount: '8 / month (single-image / carousel)',
+    staticPostsNotes: 'Single/Carousel as approved. Design, copy/caption and final export.',
+    storiesAssets: 'Included within approved monthly content calendar',
+    contentPlanning: '1 monthly plan (Topics, doctors, services and campaigns for approval)',
+    contentShoot: '1 / month (Up to 4 hours. Doctor/presenter time up to approx. 60-90 minutes)',
+    reporting: '1 / month (Basic organic metrics summary & monthly virtual review call)',
+    revisionRounds: 'Up to 3 reasonable rounds per deliverable',
+    excludedItems: 'Influencer fees, paid ad spend, external models, travel & props',
+    contractPeriod: '12 Months',
+    billingCycle: 'Monthly'
+  },
+  gbp: {
+    coveredLocations: 'Kavety Multispeciality Hospital: Main Campus, Asilmetta, Visakhapatnam - 530003',
+    monthlyFee: 2000,
+    isComplimentary: false, // strictly driven by socialMedia selection
+    initialAuditTimeline: '2-3 Business Days (audit, categories & hours setup)',
+    weeklyPosts: '2 posts per week (maximum 8 posts per calendar month)',
+    qnaTurnaround: 'Keywords-enriched Q&A injections (batch setup & updates)',
+    reviewMonitoring: 'Daily monitoring, approved response drafting and spam defense',
+    reporting: 'Monthly map views, direction clicks, phone calls & local ranking progress',
+    contractPeriod: '12 Months',
+    billingCycle: 'Monthly'
+  },
+  paidAds: {
+    platforms: {
+      googleSearch: true,
+      googleDisplayYouTube: true,
+      metaFbInsta: true,
+      linkedIn: false,
+      other: ''
+    },
+    accountStatus: 'existing_account',
+    agencyManagementFee: 2000,
+    paidMediaBudget: 'INR 2,000 – INR 6,000 daily spend (Customer direct to Meta / Google)',
+    whoPaysPlatform: 'Customer pays platforms directly via credit card / prepaid balance',
+    creativesCount: 'Up to 3-5 static/video ad creatives per month',
+    launchTimeline: '3-4 Business Days per platform (subject to access & budget)',
+    leadDelivery: 'Weekdays by 11:00 AM IST to designated CRM / Google Spreadsheet',
+    conversionTracking: 'Meta Pixel, GA4, Google Tag Manager & Conversions API integration',
+    contractPeriod: '12 Months',
+    billingCycle: 'Monthly'
+  },
+  website: {
+    pageCount: '5-7 pages (incl. 1 landing page)',
+    cmsPlatform: 'WordPress',
+    domainUrl: 'https://kavetyhospital.com',
+    projectType: 'one_time',
+    oneTimeFee: 5000,
+    monthlyMaintenanceFee: 0,
+    deliveryTime: '4-6 weeks from receipt of complete Customer content',
+    m1KickoffPercent: 50,
+    m2MockupPercent: 25,
+    m3GoLivePercent: 25,
+    uatPeriod: '5 Business Days for client review and defect logging',
+    postLaunchSupport: '30 Days post-launch warranty defect resolution included',
+    contractPeriod: '12 Months',
+    billingCycle: 'Monthly'
+  },
+  seo: {
+    scopeUrls: 'https://kavetyhospital.com',
+    primaryKeywordsCount: 10,
+    pagesOptimisedPerMonth: '7-8 agreed pages per month (metadata, alt tags, schema)',
+    monthlyRetainer: 5000,
+    oneTimeSetupFee: 'Complimentary technical audit',
+    technicalAuditScope: 'Crawl health, speed check, broken links, schema & site architecture',
+    localSeoCoordination: 'Coordinated with Google Business Profile to prevent double-counting',
+    contractPeriod: '12 Months',
+    billingCycle: 'Monthly'
+  },
+  onboarding: {
+    targetKickoffDate: 'Within 3 Business Days of agreement execution & access provisioning',
+    designatedManager: 'Designated sBLOOM Account Manager',
+    delegatedAccessStatus: 'To be provisioned via Meta Business Manager & Google MCC'
+  },
+  specialTerms: 'None. Standard terms and conditions apply without variation.',
+  customNotes: 'SMM trial includes 1 month complimentary onboarding. Advertising spend is payable directly by Customer to Google/Meta.'
+};
